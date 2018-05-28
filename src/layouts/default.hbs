@@ -6,11 +6,11 @@
   <title>{{package.name}} v{{package.version}}</title>
   <link rel="icon" type="image/x-icon" href="./{{baseurl}}/assets/fabricator/images/favicon.ico"/>
   {{#if fabricator}}
-    <link rel="stylesheet" href="./{{baseurl}}/assets/fabricator/styles/fabricator.css">
+    <link rel="stylesheet" type="text/css" href="./{{baseurl}}/assets/fabricator/styles/fabricator.css">
   {{/if}}
   {{#unless documentation}}
     {{#each toolkitConfig.toolkitStyles}}
-      <link rel="stylesheet" href="./{{../baseurl}}/assets/toolkit/styles/{{this}}.css">
+      <link rel="stylesheet" type="text/css" href="./{{../baseurl}}/assets/toolkit/styles/{{this}}.css">
     {{/each}}
   {{/unless}}
 </head>
